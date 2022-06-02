@@ -20,3 +20,7 @@ function solution(n) {
     }
     return -1;
 }
+
+
+let a = solution(2);
+console.log(a);
