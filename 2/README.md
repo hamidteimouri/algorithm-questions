@@ -13,8 +13,13 @@ func Solution(A []int, P []int, B int, E int) bool
 ```
 that, given to arrays of integers `A` and `P`, both of length `N`, and two integers `B` and `E`, returns `true` if the package can be moved from position `B` to position `E` using the cranes described by arrays `A` and `P` and `false` otherwise .<br>
 ### Examples:
-1. Given `A = [2,1]`, `P = [5,1]`, `B = 3`, `E = 6`, your function should returns `true` . The crane number zero can move the package from position `3` to `6` directly.<br> 
-![image2](assets/img2.png "Image 2").<br><br>
+1. Given `A=[2,1]`, `P=[5,1]`, `B=3`, `E=6`, your function should returns `true` . The crane number zero can move the package from position `3` to `6` directly.<br> 
+![image2](assets/img2.png "Image 2")<br><br>
 
-2. Given `A = [2,1]`,`P = [5,1]`,`B = 2`,`E = 6`, your function should returns `false`. The crane number zero cannot reach the package at its initial position. The crane number one can move it from position `2` any position between `0` and `2`. The crane number zero still will not be able to reach package at any of these position, so it is not possible to move package to position `6`.<br>
-![image3](assets/img3.png "Image 3").<br><br>
+2. Given `A=[2,1]`, `P=[5,1]`, `B=2`, `E=6`, your function should returns `false`. The crane number zero cannot reach the package at its initial position. The crane number one can move it from position `2` any position between `0` and `2`. The crane number zero still will not be able to reach package at any of these position, so it is not possible to move package to position `6`.<br>
+![image3](assets/img3.png "Image 3")<br><br>
+
+3. Given `A=[1,4,2]`, `P=[10,4,7]`, `B=11`, `E=1`, your function should returns `true`. The package can, for example, be moved by the crane number zero, from position `11` to `9`, then by crane number two from position `9` to `7` and finally from position `7` to `1` by the crane number one .<br>
+![image3](assets/img4.png "Image 3")<br><br>
+
+3. Given `A=[5,5,1]`, `P=[3,3,6]`, `B=11`, `E=1`, your function should returns `true`. Notice that the first two cranes are identical. We can use the crane number one to move the package directly from position `4` directly to position `8`.
